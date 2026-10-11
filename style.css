@@ -104,6 +104,20 @@ h3 { font-size: 18px; margin: 0 0 6px; }
 .timeline .tl-points li { padding-bottom: 2px; }
 .timeline .tl-points li::before { content: none; }
 
+/* For Fun */
+.project { display: flex; gap: 20px; align-items: center; margin-top: 16px; }
+.project-img { flex-shrink: 0; width: 180px; }
+.project-img img {
+  display: block; width: 100%; height: auto;
+  border-radius: 10px; border: 1px solid var(--border);
+  transition: transform .15s;
+}
+.project-img:hover img { transform: scale(1.02); }
+.project p { margin: 0 0 8px; color: var(--muted); }
+@media (max-width: 480px) {
+  .project { flex-direction: column; align-items: flex-start; }
+}
+
 /* Contact */
 .contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px; }
 .contact a {
