@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name</title>
+  <meta name="description" content="Personal website of Your Name, PhD candidate in Your Field at Your University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="brand" href="#">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="cv.pdf">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- About -->
+    <section class="hero">
+      <img class="avatar" src="profile.jpg" alt="Photo of Your Name"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar avatar-placeholder',textContent:'YN'}))">
+      <div>
+        <h1>Your Name</h1>
+        <p class="role">PhD Candidate · Department of Your Field · Your University</p>
+        <p>
+          I study <strong>your research topic</strong>. My work focuses on a short description
+          of the questions you care about and the methods you use. Before my PhD, I studied
+          at Previous University.
+        </p>
+        <ul class="links">
+          <li><a href="mailto:you@university.edu">Email</a></li>
+          <li><a href="https://scholar.google.com/">Google Scholar</a></li>
+          <li><a href="https://github.com/your-username">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li><time>Oct 2026</time> Launched this website.</li>
+        <li><time>Sep 2026</time> Presented at Example Conference.</li>
+      </ul>
+    </section>
+
+    <!-- Research -->
+    <section id="research">
+      <h2>Research</h2>
+      <p>
+        One or two paragraphs on your research. What problem are you working on, why does it
+        matter, and what is your approach?
+      </p>
+      <div class="cards">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>A short description of the project and its main result.</p>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>A short description of the project and its main result.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li>
+          <span class="pub-title">Title of Your Paper</span>
+          <span class="pub-authors"><strong>Your Name</strong>, Coauthor A, Coauthor B</span>
+          <span class="pub-venue">Journal or Conference Name, 2026</span>
+          <span class="pub-links"><a href="#">PDF</a> <a href="#">Code</a></span>
+        </li>
+        <li>
+          <span class="pub-title">Title of Another Paper</span>
+          <span class="pub-authors">Coauthor A, <strong>Your Name</strong></span>
+          <span class="pub-venue">Working paper, 2025</span>
+          <span class="pub-links"><a href="#">arXiv</a></span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Teaching -->
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul class="plain">
+        <li><strong>Teaching Assistant</strong>, Course Name, Your University (Fall 2025)</li>
+        <li><strong>Teaching Assistant</strong>, Course Name, Your University (Spring 2025)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Your Name</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
