@@ -100,7 +100,7 @@ h3 { font-size: 18px; margin: 0 0 6px; }
 .tl-head time { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
 .tl-org { color: var(--muted); font-size: 15px; }
 .timeline p { margin: 4px 0 0; }
-.timeline .tl-points { margin: 4px 0 0; padding-left: 18px; }
+.timeline .tl-points { margin: 4px 0 0; padding-left: 0; list-style: none; }
 .timeline .tl-points li { padding-bottom: 2px; }
 .timeline .tl-points li::before { content: none; }
 
