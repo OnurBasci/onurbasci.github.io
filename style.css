@@ -86,6 +86,32 @@ h3 { font-size: 18px; margin: 0 0 6px; }
 .plain { padding-left: 20px; margin: 0; }
 .plain li { margin-bottom: 6px; }
 
+/* Experience */
+.subhead { font-size: 17px; color: var(--muted); margin: 20px 0 12px; }
+.timeline { list-style: none; margin: 0; padding: 0 0 0 20px; border-left: 2px solid var(--border); }
+.timeline li { position: relative; padding-bottom: 18px; }
+.timeline li::before {
+  content: ""; position: absolute; left: -29px; top: 7px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--bg); border: 2px solid var(--accent);
+}
+.tl-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4px 16px; flex-wrap: wrap; }
+.tl-role { font-weight: 600; }
+.tl-head time { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+.tl-org { color: var(--muted); font-size: 15px; }
+.timeline p { margin: 4px 0 0; }
+
+/* Contact */
+.contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px; }
+.contact a {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 16px; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--surface); color: var(--text);
+  transition: border-color .15s, color .15s;
+}
+.contact a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.contact svg { width: 20px; height: 20px; flex-shrink: 0; }
+
 /* Footer */
 .site-footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; padding: 24px 0 40px; margin-top: 24px; }
 
@@ -95,5 +121,4 @@ h3 { font-size: 18px; margin: 0 0 6px; }
   .links { justify-content: center; }
   .avatar { width: 120px; height: 120px; }
   .nav-links { gap: 14px; }
-  .nav-links li:nth-child(3) { display: none; }
 }
